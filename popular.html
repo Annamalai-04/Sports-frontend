@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Sports</title>
+    <style>
+        ul{
+            list-style-type: none;
+            position: fixed;
+            top: 5;
+            margin: auto;
+            padding: auto;
+            background-color: rgb(128,159,255);
+            width: 100%;
+            overflow: hidden;
+        }
+        li{
+            margin-right: 135px;
+            float: left;
+        }
+        li a{
+            display: block;
+            padding: 20px 25px;
+            text-decoration: none;
+            color: white;
+            
+        }
+        
+        nav a.active,
+nav a:visited {
+  background-color: #000; /* Replace with your desired background color for active and visited links */
+  color: #fff; /* Replace with your desired text color for active and visited links */
+}
+div{
+  padding: 90px 40px 50px;
+}
+h1{
+   text-align: center;
+   font-size: 2cm;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-decoration: underline;
+   color: purple;
+}
+table,td,tr{
+  padding: 20px;
+  margin: 10px;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+        
+    </style>
+    <script>
+        // Function to set the active link
+        function setActiveLink() {
+          const navLinks = document.querySelectorAll('nav a');
+          const currentPage = window.location.pathname.split('/').pop();
+      
+          for (const link of navLinks) {
+            const linkPage = link.getAttribute('href').split('/').pop();
+      
+            if (currentPage === linkPage) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          }
+        }
+      
+        // Call the function when the page loads and each time a link is clicked
+        document.addEventListener('DOMContentLoaded', setActiveLink);
+        document.querySelectorAll('nav a').forEach((link) => {
+          link.addEventListener('click', setActiveLink);
+        });
+      </script>
+      
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_parent">SPORTS IN INDIA</a></li>
+            <li><a href="home.html" target="_parent">Home</a></li>
+            <li><a href="about.html" target="_parent">About</a></li>
+            <li><a href="popular.html" target="_parent">Popular Sports</a></li>
+            <li><a href="player.html" target="_parent">Players</a></li>
+            <li><a href="news.html" target="_parent">News</a></li>
+
+        </ul>
+    </nav>
+    <div>
+      <h1>Top 3 Popular sports in india </h1>
+      <img src="pop.png">
+      <table>
+        <tr>
+          <td style="font-size: 55px; font: bold;">Cricket </td>
+          <td style="color: blue; font-size: 25px;">Cricket is not a sport, it’s more like a religion in India, every second person in India is a cricket fanatic and can talk endlessly about their love for the sport. It all started after the former captain of India lifted the ICC World Cup in 1983, the first time India had won a major competition.
+
+            As for the obsession with sports, India’s love of cricket is always compared to Argentina’s and Brazil’s passion for football. But the number of cricket fans in India is simply unbelievable, one of the reasons for this may be India’s success and competitiveness in the game.
+            
+            India has always ranked among the top teams playing the sport, winning the inaugural ICC World T20 Championship, the 2011 ICC World Championship and the 2013 ICC Champions Trophy. India is currently ranked 1st in the ICC Test rankings and 2nd in the ICC ODI rankings.
+            
+            Over the years, India has produced some phenomenal cricketers who have raised the bar globally. The greatest cricketer and some say he is the “God of Cricket”, Sachin Ramesh Tendulkar is one of the best players in India. He dominated and set records throughout his 24-year career. He scored 100 points in his career and is also the highest scoring player in the history of the game.</td>
+        
+          </tr>
+          <tr>
+            <td style="font-size: 55px; font: bold;">Kabbadi </td>
+            <td style="color: blue; font-size: 25px;">Kabaddi is a traditional sport in India; it has recently gained mainstream attention and taken center stage in Indian Sports. This is mainly due to the introduction of the Pro Kabaddi League and it is the second most popular sports league in India after the IPL. PKL is a franchise-based competition with Kabaddi closed version rules.
+
+              Kabaddi has recently gained recognition as a competitive sport and is part of the Asian Games. PKL and Kabaddi World Cup are the most anticipated competitions in this sport. India has dominated this sport from the very beginning and this is also one of the main reasons for its popularity in our country. Iran is India’s closest competitor in Kabaddi. India has won every kabaddi world championship that has been held so far.</td>
+          </tr>
+          <tr>
+            <td style="font-size: 55px; font: bold;">Football  </td>
+            <td style="color: blue; font-size: 25px;">Football is the second most popular sport in India after cricket. Oddly enough, in India this sport is watched more than it is played. The India national football team has not had much success internationally and the team is ranked 108th in the world in the FIFA rankings without ever qualifying for the FIFA World Cup.
+
+              The popularity of this sport is mainly due to the huge number of fans of European football in India and the Premier League is one of the most popular sports leagues in India.
+              
+              In the past, India successfully qualified for the 1950 but were unable to participate as they were not allowed to play barefoot. In 1956, India became the first Asian country to reach the semi-finals of the Olympic Games. India also finished second in the 1964 Asian Football Cup. However, over time, the level of football dropped due to a lack of interest and skills.</td>
+          </tr>
+      </table>
+    </div>
+    <footer>
+      <div style="width: 1490px; height: 40px; padding: 5px ;background-color:rgb(128,159,255);"  >
+        <p style="margin-left: 45%;">&copy;Copyright,All Rights Reserved</p>
+      </div>
+    </footer>
+</body>
+</html>

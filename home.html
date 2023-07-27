@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Sports</title>
+    <style>
+        ul{
+            position: fixed;
+            top: 5;
+            list-style-type: none;
+            margin: auto;
+            padding: auto;
+            background-color: rgb(128,159,255);
+            width: 100%;
+            overflow: hidden;
+        }
+        li{
+            margin-right: 135px;
+            float: left;
+        }
+        li a{
+            display: block;
+            padding: 20px 25px;
+            text-decoration: none;
+            color: white;
+            
+        }
+        
+        nav a.active,
+nav a:visited {
+  background-color: #000; /* Replace with your desired background color for active and visited links */
+  color: #fff; /* Replace with your desired text color for active and visited links */
+}
+ div{
+  align-items: center;
+  padding: 90px 50px 50px ;
+  margin: 5px;
+  align-content: center;
+  margin-right: 25cm;
+ }
+ tr,td{
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+  font-size: 1cm;
+
+ }
+ table{
+  margin-left: 35%;
+  margin-right: auto;
+ }
+img
+{
+  width: 380px;
+  height: 280px;
+}
+caption{
+  font-size: 50px;
+  padding:10px;
+  color: purple;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.rating{
+  width: 40px;
+  height: 40px;
+  
+}
+        
+    </style>
+    <script>
+        // Function to set the active link
+        function setActiveLink() {
+          const navLinks = document.querySelectorAll('nav a');
+          const currentPage = window.location.pathname.split('/').pop();
+      
+          for (const link of navLinks) {
+            const linkPage = link.getAttribute('href').split('/').pop();
+      
+            if (currentPage === linkPage) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          }
+        }
+      
+        // Call the function when the page loads and each time a link is clicked
+        document.addEventListener('DOMContentLoaded', setActiveLink);
+        document.querySelectorAll('nav a').forEach((link) => {
+          link.addEventListener('click', setActiveLink);
+        });
+      </script>
+      
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_parent">SPORTS IN INDIA</a></li>
+            <li><a href="home.html" target="_parent">Home</a></li>
+            <li><a href="about.html" target="_parent">About</a></li>
+            <li><a href="popular.html" target="_parent">Popular Sports</a></li>
+            <li><a href="player.html" target="_parent">Players</a></li>
+            <li><a href="news.html" target="_parent">News</a></li>
+
+        </ul>
+    </nav>
+    <section>
+      
+      <div>
+        <table border="solid">
+          <caption>SPORTS PLAYED IN INDIA</caption>
+          <tr>
+            <th rowspan="2">Sports Name</th>
+            <th rowspan="2">image</th>
+            <th colspan="2">Specification</th>
+
+          </tr>
+          <tr>
+            <th>Level</th>
+            <th style="padding: 30px;">Rating</th>
+          </tr>
+          <tr>
+            <td>Badminton</td>
+            <td><img src="badminton.jpg"></td>
+            <td>international</td>
+            <td><img class="rating" src="icons8-star-96.png"><img class="rating" src="icons8-star-96.png">
+              <img class="rating" src="icons8-star-96.png"><img class="rating" src="icons8-star-96.png"></td>
+          </tr>
+          <tr>
+            <td>Basketball</td>
+            <td><img src="basketball.jpg"></td>
+            <td>international</td>
+            <td><img class="rating" src="icons8-star-96.png"></td>
+            
+          </tr>
+          <tr>
+            <td>Boxing</td>
+            <td><img src="boxing.jpg"></td>
+            <td>national</td>
+            <td><img class="rating" src="icons8-star-96.png"><img class="rating" src="icons8-star-96.png">
+              </td>
+          </tr>
+          <tr>
+            <td>Cricket</td>
+            <td><img src="cric.jpg"></td>
+            <td>international</td>
+            <td><img class="rating" src="icons8-star-96.png"><img class="rating" src="icons8-star-96.png">
+              <img class="rating" src="icons8-star-96.png"><img class="rating" src="icons8-star-96.png"></td>
+            
+          </tr>
+          <tr>
+            <td>Field Hockey</td>
+            <td><img src="hockey.jpg"></td>
+            <td>international</td>
+            <td><img class="rating" src="icons8-star-96.png"><img class="rating" src="icons8-star-96.png">
+              <img class="rating" src="icons8-star-96.png"><img class="rating" src="icons8-star-96.png"></td>
+          </tr>
+          <tr>
+            <td>Formula 1</td>
+            <td><img src="formula1.jpg"></td>
+            <td>international</td>
+            <td><img class="rating" src="icons8-star-96.png"><img class="rating" src="icons8-star-96.png">
+              <img class="rating" src="icons8-star-96.png"></td>
+            
+          </tr>
+          <tr>
+            <td>Kabaddi</td>
+            <td><img src="kabbadi.jpg"></td>
+            <td>national</td>
+            <td><img class="rating" src="icons8-star-96.png"><img class="rating" src="icons8-star-96.png">
+              <img class="rating" src="icons8-star-96.png"><img class="rating" src="icons8-star-96.png"></td>
+          </tr>
+          <tr>
+            <td>Soccer(football)</td>
+            <td><img src="football.jpg"></td>
+            <td>national</td>
+            <td><img class="rating" src="icons8-star-96.png"><img class="rating" src="icons8-star-96.png">
+              <img class="rating" src="icons8-star-96.png"></td>
+          </tr>
+          <tr>
+            <td>Table Tennis</td>
+            <td><img src="table.jpg"></td>
+            <td>international</td>
+            <td><img class="rating" src="icons8-star-96.png"></td>
+          </tr>
+          <tr>
+            <td>Tennis</td>
+            <td><img src="tennis.jpg"></td>
+            <td>international</td>
+            <td><img class="rating" src="icons8-star-96.png"><img class="rating" src="icons8-star-96.png">
+              <img class="rating" src="icons8-star-96.png"></td>
+            
+          </tr>
+          <tr>
+            <td>Wrestling</td>
+            <td><img src="wrestling.jpg"></td>
+            <td>national</td>
+            <td><img class="rating" src="icons8-star-96.png"><img class="rating" src="icons8-star-96.png">
+              </td>
+          </tr>
+          
+            
+          </tr>
+        </table>
+      </div>
+    </section>
+    <footer>
+      <div style="width: 1490px; height: 40px; padding: 5px ;background-color:rgb(128,159,255);"  >
+        <p style="margin-left: 45%;">&copy;Copyright,All Rights Reserved</p>
+      </div>
+    </footer>
+</body>
+</html>

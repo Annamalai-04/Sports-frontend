@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Sports</title>
+    <style>
+        ul{
+            list-style-type: none;
+            position: fixed;
+            top: 5;
+            margin: auto;
+            padding: auto;
+            background-color: rgb(128,159,255);
+            width: 100%;
+            overflow: hidden;
+        }
+        li{
+            margin-right: 135px;
+            float: left;
+        }
+        li a{
+            display: block;
+            padding: 20px 25px;
+            text-decoration: none;
+            color: white;
+            
+        }
+        h1{
+          font-size: 2cm;
+          text-decoration: underline;
+          text-align: center;
+          color:purple;
+        }
+        nav a.active,
+nav a:visited {
+  background-color: #000; /* Replace with your desired background color for active and visited links */
+  color: #fff; /* Replace with your desired text color for active and visited links */
+}
+
+        div{
+          padding: 90px 40px 5px;
+        }
+        dl{
+          padding: 10px;
+        }
+        dt{
+          padding: 20px;
+          font-size: 1cm;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font: bold;
+        }
+        dd{
+          display: block;
+          color:blue;
+        }
+    </style>
+    <script>
+        // Function to set the active link
+        function setActiveLink() {
+          const navLinks = document.querySelectorAll('nav a');
+          const currentPage = window.location.pathname.split('/').pop();
+      
+          for (const link of navLinks) {
+            const linkPage = link.getAttribute('href').split('/').pop();
+      
+            if (currentPage === linkPage) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          }
+        }
+      
+        // Call the function when the page loads and each time a link is clicked
+        document.addEventListener('DOMContentLoaded', setActiveLink);
+        document.querySelectorAll('nav a').forEach((link) => {
+          link.addEventListener('click', setActiveLink);
+        });
+      </script>
+      
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_parent">SPORTS IN INDIA</a></li>
+            <li><a href="home.html" target="_parent">Home</a></li>
+            <li><a href="about.html" target="_parent">About</a></li>
+            <li><a href="popular.html" target="_parent">Popular Sports</a></li>
+            <li><a href="player.html" target="_parent">Players</a></li>
+            <li><a href="news.html" target="_parent">News</a></li>
+
+        </ul>
+    </nav>
+    <div>
+      <h1>Details of different Sports in India</h1>
+      <dl>
+        <dt>Badminton</dt>
+        <dd>Badminton is a popular sport in India. It is the second-most played sport in India after Cricket. Badminton in India is managed by the Badminton Association of India.
+
+          Indian shuttlers P. V. Sindhu, Lakshya Sen, H. S. Prannoy, and the doubles pair of Satwiksairaj Rankireddy-Chirag Shetty are ranked amongst the Top-10 in the current BWF world rankings.</dd>
+        <dt>Basketball</dt>
+        <dd>Basketball was brought to India in 1893 by Canadian T. Duncan Patton, who later returned to India as the Acting General Secretary of the Calcutta YMCA from 1903. The game was initially most popular among women, although slow to spread. The country's first match is recorded as 1930 by some sources, with the first Indian National Championship for men being held in 1934 in New Delhi. The Basketball Federation of India (BFI), which controls the game in India, was formed in 1950.</dd>
+        <dt>Boxing</dt>
+        <dd>In India, the sport of boxing is governed by the Boxing Federation of India. The majority of boxing in India occurs nationally and internationally as amateur boxing, with only a few boxers opting to pursue professional boxing. This has been attributed to a lack of promotional companies, facilities, and revenue. However, India is a regular medal-holder at international tournaments including the Asian Games and Commonwealth Games, and Olympics. Boxing has been rising in popularity in certain states, particularly in Haryana. The Bhiwani Boxing Club in Bhiwani, Haryana has produced medalists in various weight classes.</dd>
+        <dt>Cricket</dt>
+        <dd>Cricket has been the most popular sport in India, it is played almost everywhere in the countryunreliable source?] and a prominent part of the country. The Board of Control for Cricket in India (BCCI) is the governing body of Indian cricket and conduct all domestic tournaments and select the players for India national cricket team and India women's national cricket team.</dd>
+        <dt>Field Hockey</dt>
+        <dd>Hockey India plans, directs and conducts all the activities for both men and women hockey in India. It is recognized by the Ministry of Youth Affairs and Sports, Government of India as the sole body responsible towards promoting Hockey in India. It was formed after Indian Hockey Federation was dismissed in 2008 by IOA</dd>
+        <dt>Formula 1</dt>
+        <dd>The Indian Grand Prix was a Formula One race in the calendar of the FIA Formula One World Championship, which was held at the Buddh International Circuit in sector 25 along Yamuna Expressway in Gautam Buddh Nagar district of Uttar Pradesh from 2011 until 2013.</dd>
+        <dt>Soccer(Football)</dt>
+        <dd>Football in India is among the three most popular sports in terms of player participation and TV viewership, together with cricket and kabaddi. India's top domestic competition is the Indian Super League, formed with eight teams in 2014, recognised by the AFC as the national football league. The Santosh Trophy is a knock-out competition between Indian states and government institutions.</dd>
+        <dt>Table tennis</dt>
+        <dd>Table tennis is a popular indoor recreation sport in India, which has caught on in states like West Bengal, Tamil Nadu, Maharashtra, and Gujarat. The Table Tennis Federation of India is the official sports body. As of February 2019, India's Men's Team ranked 10th and Women's team ranked 22nd in the World. India has produced singles player ranked in the top 50 both in Men's and Women's category,
+
+        </dd>
+        <dt>Tennis</dt>
+        <dd>Tennis enjoys a considerable following in India, although it is limited to urban areas but still it is counted among the most popular sports in India. India has produced a number of tennis players, who have achieved international recognition and have made their presence in some of the top tennis tournaments and grand slams.[2] All India Tennis Association (AITA) established in 1920, is the governing body of tennis in India and is a member of the Asian Tennis Federation.[3] India Davis Cup team is the most successful team of Asia in Davis Cup, who has finished as runners-up 3 times.</dd>
+        <dt>Wrestling</dt>
+        <dd>Wrestling is one of the oldest sports in India. Several regional styles and variations in folk wrestling exists in the country. Indian wrestlers have won numerous medals at international competitions in freestyle wrestling.</dd>
+      </dl>
+    </div>
+    <footer>
+      <div style="width: 1490px; height: 40px; padding: 5px ;background-color:rgb(128,159,255);"  >
+        <p style="margin-left: 45%;">&copy;Copyright,All Rights Reserved</p>
+      </div>
+    </footer>
+</body>
+</html>

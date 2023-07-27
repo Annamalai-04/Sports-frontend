@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Sports</title>
+    <style>
+       nav ul{
+            list-style-type: none;
+            position: fixed;
+            top: 5;
+            margin: auto;
+            padding: auto;
+            background-color: rgb(128,159,255);
+            width: 100%;
+            overflow: hidden;
+        }
+        nav li{
+            margin-right: 135px;
+            float: left;
+        }
+        li a{
+            display: block;
+            padding: 20px 25px;
+            text-decoration: none;
+            color: white;
+            
+        }
+        
+        
+        nav a.active,
+nav a:visited {
+  background-color: #000; /* Replace with your desired background color for active and visited links */
+  color: #fff; /* Replace with your desired text color for active and visited links */
+}
+div{
+  padding: 90px 40px 50px;
+}
+img{
+  float:right;
+  width:30%
+}
+       div li {
+        font-size: 25px;
+       } 
+    </style>
+    <script>
+        // Function to set the active link
+        function setActiveLink() {
+          const navLinks = document.querySelectorAll('nav a');
+          const currentPage = window.location.pathname.split('/').pop();
+      
+          for (const link of navLinks) {
+            const linkPage = link.getAttribute('href').split('/').pop();
+      
+            if (currentPage === linkPage) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          }
+        }
+      
+        // Call the function when the page loads and each time a link is clicked
+        document.addEventListener('DOMContentLoaded', setActiveLink);
+        document.querySelectorAll('nav a').forEach((link) => {
+          link.addEventListener('click', setActiveLink);
+        });
+      </script>
+      
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_parent">SPORTS IN INDIA</a></li>
+            <li><a href="home.html" target="_parent">Home</a></li>
+            <li><a href="about.html" target="_parent">About</a></li>
+            <li><a href="popular.html" target="_parent">Popular Sports</a></li>
+            <li><a href="player.html" target="_parent">Players</a></li>
+            <li><a href="news.html" target="_parent">News</a></li>
+
+        </ul>
+    </nav>
+    <div>
+    <h1 style="margin-left: 45%;">About Sports in India</h1>
+    <img src="sport.jpg">
+      <p style="font-size: 16px;">Sport is a significant part of life in India. The country has a very long sports history, with sports being a part of tradition, culture, finance and entertainment. People in India closely follow various sports and enthusiastically participate in them. Cricket is the most popular spectator sport in the country,<br>
+        
+        it generates the highest television viewership, and features full-capacity audiences in stadiums during international and Indian Premier League (IPL) matches.<br> Also in recent decades, Football has also become another popular sport in terms of broadcast viewership and stadium audience attendance.[2][b] The Indian Super League (ISL), is highest league of football in India. ISL and national team's matches attract considerable audience in stadium and on TV. The national football team have won two Gold medals at the Asian games, three Gold medals at the South Asian Games and one silver at the Asian Cup held in 1964 in Israel by virtue of their runner-up position, reached semifinal of the 1960 Olympics, qualified for the 1950 FIFA World Cup and have won SAFF Championship record number of times.[4][5][6][7]
+
+        Kabaddi has grown into the mainstream, and so have badminton, tennis and athletic.<br> Kho-kho has grown into becoming the fourth-most viewed sport in the country.[8] India has also had considerable success in field hockey. India has won the World Cup and multiple medals in field hockey in the Olympic Games. <br>During that time, Major Dhyan Chand was a notable player. Sports such as swimming and badminton are played as recreational activities and for exercise.[9] India does not have a national game.[10][c]
+        
+        India celebrates its National Sports Day annually on 29 August, on the birthday of India's greatest hockey player, Dhyan Chand.<br>In recent decades, the Government of India and Ministry of Youth Affairs and Sports have tried to boost sports in the country by launching and frequently organising new national sports events such as Khelo India Youth Games (KIYG), Khelo India Winter Games and Khelo India University Games (KIUG) of Khelo India games in various cities across the nation.[d] Thousands of youngsters participated in it. The first Khelo India School games was held in 2018.[e] The initiative also focused on building new infrastructure. KIYG and KIUG are set up as annual events for youngsters, who represent their states and universities in them. So far, the Ministry of Youth Affairs and Sports has organised many editions of these games
+        </p>
+    <h2> Popular Sports of India:</h2>
+    <ul>
+      <li>Cricket</li>
+      <li>Hockey</li>
+      <li>Badminton</li>
+      <li>Wrestling</li>
+      <li>Football</li>
+      <li>Javelint Throw</li>
+    </ul>
+    <h2>Popular Athletes from india</h2>
+    <ul>
+      <li>Virat Kolhi(Cricket)</li>
+      <li>Manpreet(Hockey)</li>
+      <li>Srikanth Kidambi(Badminton)</li>
+      <li>Sushil Kumar(Wrestling)</li>
+      <li>Gurpreet Singh (football)</li>
+      <li>Neeraj Chopra(Throw)</li>
+
+    </ul>
+    </div>
+    <footer>
+      <div style="width: 1490px; height: 40px; padding: 5px ;background-color:rgb(128,159,255);"  >
+        <p style="margin-left: 45%;">&copy;Copyright,All Rights Reserved</p>
+      </div>
+    </footer>
+</body>
+</html>
